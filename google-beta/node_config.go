@@ -259,7 +259,7 @@ func schemaNodeConfig() *schema.Schema {
 							"node_metadata": {
 								Type:         schema.TypeString,
 								Required:     true,
-								ValidateFunc: validation.StringInSlice([]string{"UNSPECIFIED", "SECURE", "EXPOSE", "GKE_METADATA_SERVER"}, false),
+								ValidateFunc: validation.StringInSlice([]string{"UNSPECIFIED", "SECURE", "EXPOSE", "GKE_METADATA_SERVER", "GCE_METADATA"}, false),
 								Description:  `NodeMetadata is the configuration for how to expose metadata to the workloads running on the node.`,
 							},
 						},
